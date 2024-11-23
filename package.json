@@ -2,7 +2,6 @@
   "name": "@fabian-dev-org-ws/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.2.0",
@@ -59,5 +58,5 @@
     "typescript": "~5.5.2",
     "typescript-eslint": "^8.0.0"
   },
-    "packageManager": "yarn@4.5.2"
+  "packageManager": "yarn@4.5.2"
 }
