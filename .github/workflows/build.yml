@@ -19,7 +19,7 @@ jobs:
     - name: Set up Node.js and Yarn  # Paso para configurar Node.js y Yarn
       uses: actions/setup-node@v3
       with:
-        node-version: '16'  # Usar la versión de Node.js que necesitas
+        node-version: '22.11.0'  # Usar la versión de Node.js que necesitas
 
     - name: Install dependencies with Yarn  # Instalar las dependencias con Yarn
       run: yarn install --frozen-lockfile
