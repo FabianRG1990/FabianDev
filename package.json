@@ -2,6 +2,9 @@
   "name": "@fabian-dev-org-ws/source",
   "version": "0.0.0",
   "license": "MIT",
+  "scripts": {
+    "build": " yarn && npx nx build fabianDevOrgWs "
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.2.0",

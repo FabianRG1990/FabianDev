@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/apps/fabianDevOrgWs/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
