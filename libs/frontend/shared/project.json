@@ -1,0 +1,44 @@
+{
+  "name": "shared",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "shared/src",
+  "prefix": "lib",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:ng-packagr",
+      "options": {
+        "project": "shared/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "shared/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "shared/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "tsConfig": "shared/tsconfig.spec.json",
+        "polyfills": [
+          "zone.js",
+          "zone.js/testing"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@angular-eslint/builder:lint",
+      "options": {
+        "lintFilePatterns": [
+          "shared/**/*.ts",
+          "shared/**/*.html"
+        ],
+        "eslintConfig": "shared/eslint.config.js"
+      }
+    }
+  }
+}
