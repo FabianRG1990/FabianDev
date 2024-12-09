@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+// eslint-disable-next-line @nx/enforce-module-boundaries
+import { DashboardComponent } from '@fabian-dev-org-ws/dashboard';
 
 @Component({
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, DashboardComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
