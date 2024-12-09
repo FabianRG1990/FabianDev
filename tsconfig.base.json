@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@fabian-dev-org-ws/dashboard": ["libs/frontend/dashboard/src/index.ts"]
+      "@fabian-dev-org-ws/dashboard": ["libs/frontend/dashboard/src/index.ts"],
+      "@fabian-dev-org-ws/shared": ["libs/frontend/shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
